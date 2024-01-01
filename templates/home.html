@@ -1,0 +1,17 @@
+{% extends 'base.html' %} <!--inherit template from base.html-->
+{% block content %} <!--overwtite the content here-->
+
+<div class="chat_container"></div>
+<div class="typing_container">
+    <div class="typing_content">
+        <div class="typing_textarea">
+            <textarea id="chat_input" placeholder="Message here..." required></textarea>
+            <span id="send_btn" class="material-symbols-outlined md-30">send</span>
+        </div>
+        <div class="typing_control">
+            <span class="material-symbols-outlined">menu</span>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
